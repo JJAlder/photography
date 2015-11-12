@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Jillian Alder">
+		<title>Breila Rose Photography</title>
+		<link href='https://fonts.googleapis.com/css?family=News+Cycle|Tangerine' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	
+		<header class="container">
+			<h1>Breila Rose Photography - About</h1>
+			<p class="tagline">Creating Unique Beauty.</p>
+		</header>
+
+		<div class="nav-container">
+			<nav class="container">
+				<ul>
+					<li><%= link_to "Home", root_path %></li>
+					<li><%= link_to "Gallery", gallery_path %></li>
+					<li><%= link_to "About", about_path %></li>
+				</ul>
+				<div class="clear"></div>
+			</nav>
+		</div><!-- .nav-container -->
+
+		<div class="container">
+			<div class="main">
+				<h2>About Me</h2>
+				<p>Hi there, My name is Breila and I am a professional photographer.</p>
+				<p>I've been interested in photography since I as a little girl. I love shooting all sorts of subjects, everything from Boudoir, Pin up, Engagement, Children, Pets, and other things on the wild side. </p>
+				<p>I like pursuing off the wall ideas. I really am a jack of all trades.</p> 
+				<p>I love making people happy, and doing that with photography has made my life happier.</p>
+
+				<p>People enjoy what I do, and how I make them feel. I couldn't really ask for anything more.</p> 
+				<p>So If you are interested in what I do, feel free to e-mail me at BreilaRoseRathlou@gmail.com.</p>
+ 				<p>Even if it’s just for a few questions, I’m more than Happy to answer them all.</p> 
+
+				<p>Cheers,<br>
+				Breila</p>
+
+				<h2>Contact & Area</h2>
+				<p>Please Contact me by e-mailing me directly at BreilaRoseRathlou@gmail.com</p>
+				<p>I will get back to you promptly, and with all information you need.</p> 
+
+				<p>I primarily work areas in Southern Ontario, my home base is Guelph, but I am willing to travel.</p> 
+				<p>I most commonly travel to such areas as; Guelph, Kitchener, Cambridge, Fergus, Elora, Burlington and Hamilton.</p> 
+				<br>
+				<p>I hope to hear from you soon.</p> 
+				<br>
+				<p><b>SELECT PRINTS ARE AVALIABLE FOR PURCHASE</b></p> 
+				<p>Please inquire through e-mail at BreilaRoseRathlou@gmail.com</p> 
+
+			</div><!-- .main -->
+		
+			<%= render 'layouts/sidebar' %>
+			<div class="container">
+				<%= yield %>
+			</div><!-- container -->
+			<div class="clear"></div>
+
+			
+				<footer class="container">
+					<p>All Content © Breila von Holstein-Rathlou of Breila Rose Photography</p>
+				</footer>
+			
+
+
+		</div><!-- .container -->
+	
+	</body>
+</html>

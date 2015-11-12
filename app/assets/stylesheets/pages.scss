@@ -1,0 +1,181 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*----------------------------------------------------------------------------- 
+01=BASE   
+-----------------------------------------------------------------------------*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	background: image-url('wood_1.png');
+	color: #A6A6A6;
+	font-family: 'News Cycle', sans-serif;
+}
+
+h1 {
+	letter-spacing: -2px;
+	font-size: 55px;
+	margin-bottom: 10px;
+	color: #A80000;
+	font-family: 'Tangerine', cursive;
+}
+	h1 a {
+		color: #A80000;
+	}
+
+h2 {
+	font-size: 32px;
+	margin: 0;
+}
+
+a {
+	color: Black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.post img {
+	width: 400px;
+	height: 500px;
+}
+
+
+/*----------------------------------------------------------------------------- 
+02=LAYOUT  
+-----------------------------------------------------------------------------*/
+.container {
+	margin: 0 auto 0 auto;
+	width: 950px;
+
+}
+
+.main {
+	width: 600px;
+	float: left;
+	background: #262626;
+	padding: 25px;
+	margin-right: 10px;
+	font-size: 12px;
+}
+	.main ul li {
+		display: inline-block; 
+	}
+
+	.main ul img{
+		width: 250px;
+		height: 375px;
+		padding: 5px;
+		border-radius: 15px;
+
+	}
+
+	.main ul li a {
+		color: #A6A6A6;
+	}
+
+
+.sidebar {
+	width: 340px;
+	float: left;
+	background: #262626;
+	padding: 25px;
+	border-left: 3px solid #191919;
+	border-bottom: 3px solid #191919;
+}
+	.sidebar img {
+		border-radius: 300px;
+	}
+
+	.sidebar ul {
+		list-style: none; 
+		font-size:  20px;
+	}
+
+	.sidebar ul li a {
+		color:  #A80000;
+
+	}
+
+footer {
+	text-align:  center;
+}
+
+/*----------------------------------------------------------------------------- 
+03=MAIN  
+-----------------------------------------------------------------------------*/
+.tagline {
+	margin-top: -30px;
+	margin-bottom: 30px;
+	color: #A80000;
+}
+
+.post {
+	margin-bottom: 50px;
+}
+
+.post-meta {
+color: #5a5a5a;
+padding: 10px 0px;
+border-top: #5a5a5a solid 1px;
+}
+
+.widget {
+	margin-bottom: 45px;
+}
+
+	.widget img {
+		width: 150px;
+	}
+
+/*----------------------------------------------------------------------------- 
+04=NAVBAR
+-----------------------------------------------------------------------------*/
+nav ul li {
+	float: left;
+	list-style: none;
+	color: #262626;
+}
+
+nav ul li a {
+  margin: 30px;
+  padding: 16px;
+  display: block;
+  list-style: none;
+  
+}
+
+nav li a {
+  float: left;
+  font-size: 20px;
+
+}
+
+.nav-container {
+  background: #A80000;
+  height:  75px;
+}
+
+nav ul {
+  padding-left: 0;
+}
+
+/*----------------------------------------------------------------------------- 
+05=Gallery
+-----------------------------------------------------------------------------*/
+.footer ul li a {
+	padding: 10px;
+	color: #A6A6A6;
+	font-size: 15px;
+
+}

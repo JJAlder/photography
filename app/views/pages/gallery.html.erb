@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Jillian Alder">
+		<title>Breila Rose Photography</title>
+		<link href='https://fonts.googleapis.com/css?family=News+Cycle|Tangerine' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	
+		<header class="container">
+			<h1>Breila Rose Photography - Gallery</h1>
+			<p class="tagline">Creating Unique Beauty.</p>
+		</header>
+
+		<div class="nav-container">
+			<nav class="container">
+				<ul>
+					<li><%= link_to "Home", root_path %></li>
+					<li><%= link_to "Gallery", gallery_path %></li>
+					<li><%= link_to "About", about_path %></li>
+				</ul>
+				<div class="clear"></div>
+			</nav>
+		</div><!-- .nav-container -->
+
+		<div class="container">
+			<div class="main">
+				<ul>
+					<li><h3>Blood & Gore</h3>
+					<%= link_to image_tag("gore.jpg", :alt => "Girl with blood on face"), bloodandgore_path %></li>
+
+					<li><h3>Boudoir & Pin Up's</h3>
+					<%= link_to image_tag("boudoir.jpg", :alt => "Boudoir"), boudoir_path %></li>
+
+					<li><h3>Creative</h3>
+					<%= link_to image_tag("creative.jpg", :alt => "Girl with blue hair"), creative_path %></li>
+
+					<li><h3>Love</h3>
+					<%= link_to image_tag("wedding.jpg", :alt => "Girl in Sunflower Feild"), love_path %></li>
+
+					<li><h3>Portraits</h3>
+					<%= link_to image_tag("portrait.jpg", :alt => "Mother with 2 Children"), portraits_path %></li>
+
+					<li><h3>Travel</h3>
+						<%= link_to image_tag("scotland.jpg", :alt => "Grassed covered mountains in Scotland"), travel_path %></li>
+
+
+				</ul>
+
+			</div><!-- .main -->
+
+			<%= render 'layouts/sidebar' %>
+			<div class="container">
+				<%= yield %>
+			</div><!-- container -->
+			<div class="clear"></div>
+
+			
+				<footer class="container">
+					<p>All Content © Breila von Holstein-Rathlou of Breila Rose Photography</p>
+				</footer>
+			
+
+
+		</div><!-- .container -->
+	
+	</body>
+</html>
